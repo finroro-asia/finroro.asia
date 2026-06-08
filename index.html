@@ -807,7 +807,8 @@
 
         } catch (err) {
             console.error('EmailJS error:', err);
-            alert('❌ Ralat menghantar TAC. Sila semak EmailJS configuration anda.');
+            const errMsg = err?.text || err?.message || JSON.stringify(err);
+            alert('❌ Ralat EmailJS:\n' + errMsg + '\n\nSila screenshot mesej ini.');
             btn.disabled = false;
             btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Request Code';
         }
