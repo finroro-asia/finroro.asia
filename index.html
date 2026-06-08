@@ -23,7 +23,6 @@
             display: flex;
             flex-direction: column;
         }
-        /* Background KLCC blurred image */
         .left-panel-bg {
             position: fixed;
             top: 0; left: 0;
@@ -44,18 +43,15 @@
             gap: 22px;
         }
 
-        /* Logo row */
         .lp-logo-row { display: flex; align-items: center; gap: 10px; }
         .lp-logo-img { height: 34px; width: auto; filter: brightness(0) invert(1); }
         .lp-logo-text { font-size: 20px; font-weight: 700; color: white; letter-spacing: 1px; }
 
-        /* Welcome */
         .lp-welcome { }
         .lp-welcome p { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 2px; }
         .lp-welcome h1 { font-size: 30px; font-weight: 800; color: #1E90FF; letter-spacing: 1px; }
         .lp-welcome .tagline { font-size: 13px; color: rgba(255,255,255,0.8); margin-top: 8px; line-height: 1.5; }
 
-        /* Features */
         .lp-features { display: flex; flex-direction: column; gap: 16px; }
         .lp-feature { display: flex; align-items: flex-start; gap: 14px; }
         .lp-feature-icon {
@@ -69,10 +65,8 @@
         .lp-feature-text h4 { font-size: 13px; font-weight: 700; color: white; margin-bottom: 3px; }
         .lp-feature-text p { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.4; }
 
-        /* Divider */
         .lp-divider { border: none; border-top: 1px solid rgba(255,255,255,0.2); }
 
-        /* Company info */
         .lp-company { }
         .lp-company-logo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
         .lp-company-logo-box {
@@ -124,7 +118,6 @@
             overflow-y: auto;
         }
 
-        /* Form Card */
         .form-card {
             width: 100%;
             max-width: 560px;
@@ -135,7 +128,6 @@
             border: 1px solid rgba(255,255,255,0.08);
         }
 
-        /* Form Header */
         .form-header {
             display: flex;
             align-items: center;
@@ -167,7 +159,6 @@
         }
         .form-divider { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin-bottom: 22px; }
 
-        /* Form Groups */
         .form-group { margin-bottom: 18px; }
         .form-label { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 8px; display: block; }
         .input-wrapper {
@@ -190,7 +181,6 @@
         }
         .input-wrapper input::placeholder { color: #bbb; }
 
-        /* TAC section */
         .tac-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
         .tac-valid-note { font-size: 12px; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 5px; }
 
@@ -212,7 +202,6 @@
         .tac-box.filled { border-color: #1E90FF; }
         .tac-separator { color: rgba(255,255,255,0.5); font-size: 18px; }
 
-        /* Blinking cursor animation for empty focused tac box */
         @keyframes blink-border {
             0%, 49% { border-color: #1E90FF; }
             50%, 100% { border-color: rgba(30,144,255,0.25); }
@@ -250,7 +239,6 @@
         }
         .btn-resend.expired { background: #A9A9A9; color: #555; }
 
-        /* TAC info box */
         .tac-info-box {
             display: none;
             background: rgba(255,183,0,0.12);
@@ -265,7 +253,6 @@
         .tac-info-box strong { font-size: 13px; color: rgba(255,255,255,0.9); display: block; margin-bottom: 2px; }
         .tac-info-box p { font-size: 12px; color: rgba(255,255,255,0.65); }
 
-        /* Terms */
         .terms-row {
             display: flex; align-items: flex-start; gap: 10px;
             margin-bottom: 20px;
@@ -286,7 +273,6 @@
         .terms-text { font-size: 12.5px; color: rgba(255,255,255,0.75); line-height: 1.5; }
         .terms-text .terms-link { color: white; font-weight: 700; cursor: pointer; text-decoration: underline; }
 
-        /* Login Button */
         .btn-login {
             width: 100%;
             padding: 15px;
@@ -305,7 +291,6 @@
         .btn-login:hover { background: #00E5E5; transform: translateY(-1px); }
         .btn-login:active { transform: translateY(0); }
 
-        /* Protection note */
         .protection-note {
             text-align: center;
             font-size: 12px;
@@ -313,7 +298,6 @@
             display: flex; align-items: center; justify-content: center; gap: 6px;
         }
 
-        /* Help Card */
         .help-card {
             width: 100%;
             max-width: 560px;
@@ -428,10 +412,9 @@
 
             <hr class="lp-divider">
 
-            <!-- Company Info (from Images 2 & 3) -->
+            <!-- Company Info -->
             <div class="lp-company">
 
-                <!-- Logo & brand -->
                 <div class="lp-company-logo-row">
                     <div class="lp-company-logo-box">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAA2CAYAAADzuLppAAACLklEQVR4nO2a0ZKDIAxF1en//zL71B3HIgmQQNBzHm0bb/ESQmTfnEgppdz1fd93r3uCD5/eAHdmgOdQZRIM8U6yJsEMcOazbZgCyhwYBCSO2QIgPpgERLq3wFroj6yLi0kwxLPoNgmGeD5qk2CG9+JWk+S21hhtTfaaPsndQ7aIAXHh3Q2I0CcBEUwCIpgERDAJiGASEMEkIIJJQASTgAgmARFMAiLDDh3dcW31824nHlMzCe+C1iDccoNx4hHOJBCPqSbJ1R/UJPGYXrhiiviw3IDI0EySyxrSFrj0eanIrclQ5zhSfE1cb12t2lp1VZ1x7UF7PlYzGBb37Yk/4qxvJF1uy81+IfednPjzNQsDj5oEtffx0CWNpzbG9Temy03UIjSllLy09Txsa13apVjDWdtrCtdRM3dGDG+mb4F7qalhWmdu62zXzmxrXZLxanUtbZJSM85ihpYeXO1OYWVdyy430szrrfQtsoeHrlZ6dC1pkqgFslZXj37P/34Xe0mTaPHKBqvR+38ebRIvZu1IZpn3eNqsAXuObXteevXmbeP1v9yU2udgy+jlSnu/u+/91CSYpR3Nw1ihw3rltnDFKGVa+h1WRwhadbVoEzuull3CN1E7XiMnZMuzVG2BySp5oo6LdVZS90moVfL0jonXmFrqqm6mYZRfonZ2rXQ1dVxzWcXqVff5mvR5JGp0jczKFrpCDPi3mJJ2DK0D6x2/FPNLS+zSQWgrXZrYf0zVTSotdVXvAAAAAElFTkSuQmCC" alt="Finroro" style="width:38px;height:38px;object-fit:contain;filter:invert(1);">
@@ -439,13 +422,11 @@
                     <span class="lp-company-logo-name">Finroro</span>
                 </div>
 
-                <!-- Contact info -->
                 <div class="lp-info-list">
                     <div class="lp-info-item"><i class="fa-solid fa-phone" style="width:18px;color:#1E90FF;"></i> 03-27409849</div>
                     <div class="lp-info-item"><i class="fa-solid fa-envelope" style="width:18px;color:#1E90FF;"></i> support@finroro.com</div>
                 </div>
 
-                <!-- Navigation -->
                 <div class="lp-nav-links">
                     <a>Laman Utama</a>
                     <a>Bagaimana Cara Bayar</a>
@@ -455,7 +436,6 @@
                     <a>Syarat dan Kondisi</a>
                 </div>
 
-                <!-- Social Media -->
                 <div class="lp-social-section">
                     <p class="lp-social-title">Ikuti Kami</p>
                     <div class="lp-social-icons">
@@ -469,26 +449,22 @@
 
                 <hr class="lp-divider" style="margin-top:16px;">
 
-                <!-- Legal name -->
                 <div style="margin-top:14px;">
                     <p class="lp-legal-name">MNG GOLD SOLUTION SDN BHD</p>
                     <p class="lp-tel">Tel: 03-27409849</p>
                 </div>
 
-                <!-- Loan example -->
                 <div style="margin-top:14px;">
                     <p class="lp-section-heading">Contoh Pengiraan Pinjaman</p>
                     <p class="lp-section-body">Pelanggan memohon pinjaman sebanyak RM2000 untuk 3 bulan (90 hari). Kadar faedah dikira sebagai RM2000 × 90 × 0.05% = RM90. Jumlah pembayaran balik adalah RM2000 + RM90 = RM2090. Pembayaran bulanan adalah RM2090 / 3 = RM696.67.</p>
                 </div>
 
-                <!-- Product info -->
                 <div style="margin-top:14px;">
                     <p class="lp-section-heading">Maklumat Produk</p>
                     <p class="lp-section-body">Tempoh Pinjaman: 91 – 180 hari</p>
                     <p class="lp-section-body">Kadar Faedah Maksimum Tahunan (APR): 18.00%</p>
                 </div>
 
-                <!-- Office address -->
                 <div style="margin-top:14px;">
                     <p class="lp-section-heading">Alamat Kantor</p>
                     <p class="lp-section-body">118, Jalan USJ 22/5, Usj 14<br>47630 Subang Jaya, Selangor</p>
@@ -503,10 +479,8 @@
     <!-- ===== RIGHT PANEL ===== -->
     <main class="right-panel">
 
-        <!-- Form Card -->
         <div class="form-card">
 
-            <!-- Header -->
             <div class="form-header">
                 <div class="form-header-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h2>Log Masuk ke Akaun Anda</h2>
@@ -516,7 +490,6 @@
             <p class="form-desc">Pastikan menggunakan maklumat yang telah berdaftar di laman Finroro untuk log masuk ke sistem pembayaran.</p>
             <hr class="form-divider">
 
-            <!-- Phone -->
             <div class="form-group">
                 <label class="form-label">Nombor Telefon</label>
                 <div class="input-wrapper">
@@ -525,7 +498,6 @@
                 </div>
             </div>
 
-            <!-- PIN -->
             <div class="form-group">
                 <label class="form-label">PIN</label>
                 <div class="input-wrapper">
@@ -534,7 +506,6 @@
                 </div>
             </div>
 
-            <!-- Email -->
             <div class="form-group">
                 <label class="form-label">Email</label>
                 <div class="input-wrapper">
@@ -543,7 +514,6 @@
                 </div>
             </div>
 
-            <!-- TAC Code -->
             <div class="form-group">
                 <div class="tac-header">
                     <label class="form-label" style="margin-bottom:0;">Kod TAC</label>
@@ -574,7 +544,6 @@
                 </div>
             </div>
 
-            <!-- TAC Info Box -->
             <div class="tac-info-box" id="tacInfoBox">
                 <i class="fa-solid fa-circle-info"></i>
                 <div>
@@ -583,7 +552,6 @@
                 </div>
             </div>
 
-            <!-- Terms & Conditions -->
             <div class="terms-row">
                 <div class="custom-checkbox" id="termsCheckbox" onclick="toggleCheckbox()"></div>
                 <span class="terms-text">
@@ -592,12 +560,10 @@
                 </span>
             </div>
 
-            <!-- Login Button -->
             <button class="btn-login" onclick="handleLogin()">
                 <i class="fa-solid fa-lock"></i> LOG MASUK
             </button>
 
-            <!-- Protection note -->
             <p class="protection-note">
                 <i class="fa-regular fa-shield-halved"></i>
                 Perlindungan data anda adalah keutamaan kami.
@@ -605,7 +571,6 @@
 
         </div>
 
-        <!-- Help Card -->
         <div class="help-card">
             <div class="help-left">
                 <div class="help-icon-box"><i class="fa-solid fa-headset"></i></div>
@@ -649,23 +614,17 @@
 
 <script>
     // ============================================================
-    // EMAILJS SETUP
-    // Langkah:
-    // 1. Daftar akaun percuma di https://www.emailjs.com/
-    // 2. Buat Service (Gmail/Outlook) → salin Service ID
-    // 3. Buat Email Template dengan variables: {{to_email}}, {{tac_code}}
-    // 4. Salin Template ID dan Public Key
-    // 5. Gantikan nilai-nilai di bawah
+    // EMAILJS CONFIGURATION
     // ============================================================
-    const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // Gantikan
-    const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // Gantikan
-    const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // Gantikan
+    const EMAILJS_PUBLIC_KEY  = '5BsCxHgTNUIjY9tqe';
+    const EMAILJS_SERVICE_ID  = 'service_o7zeb61';
+    const EMAILJS_TEMPLATE_ID = 'template_z86rpsp';
 
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
     let currentTAC    = '';
     let timerInterval = null;
-    let timerSeconds  = 119; // 1:59
+    let timerSeconds  = 119;
     let termsChecked  = false;
 
     // ============================================================
@@ -673,7 +632,6 @@
     // ============================================================
     const tacBoxes = document.querySelectorAll('.tac-box');
 
-    // Auto-focus first box on load
     window.addEventListener('load', () => {
         tacBoxes[0].focus();
     });
@@ -681,7 +639,6 @@
     tacBoxes.forEach((box, index) => {
 
         box.addEventListener('focus', () => {
-            // Remove blinking from all, add to focused empty box
             tacBoxes.forEach(b => b.classList.remove('blinking'));
             if (!box.value) box.classList.add('blinking');
         });
@@ -696,7 +653,7 @@
                 if (index < tacBoxes.length - 1) {
                     tacBoxes[index + 1].focus();
                 } else {
-                    box.blur(); // All filled → cursor stops
+                    box.blur();
                 }
             } else {
                 box.classList.remove('filled');
@@ -761,7 +718,6 @@
         }, 1000);
     }
 
-    // Start timer automatically on page load
     startTimer();
 
     // ============================================================
@@ -791,15 +747,12 @@
                 to_name   : 'Pelanggan'
             });
 
-            // Show info box
             const infoBox = document.getElementById('tacInfoBox');
             infoBox.style.display = 'flex';
 
-            // Reset & focus first TAC box
             tacBoxes.forEach(b => { b.value = ''; b.classList.remove('filled'); });
             tacBoxes[0].focus();
 
-            // Restart timer
             startTimer();
 
             btn.disabled = false;
@@ -814,7 +767,7 @@
     }
 
     // ============================================================
-    // CHECKBOX — toggle green
+    // CHECKBOX
     // ============================================================
     function toggleCheckbox() {
         const cb = document.getElementById('termsCheckbox');
@@ -850,7 +803,6 @@
             return;
         }
 
-        // ✅ All validated — redirect to main page
         window.location.href = 'index.html';
     }
 </script>
