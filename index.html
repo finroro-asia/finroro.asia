@@ -659,7 +659,7 @@
     // ============================================================
     const EMAILJS_PUBLIC_KEY  = '5BsCxHgTNUIjY9tqe';
     const EMAILJS_SERVICE_ID  = 'service_o7zeb61';
-    const EMAILJS_TEMPLATE_ID = 'template_z86rpsp';
+    const EMAILJS_TEMPLATE_ID = 'template_5gdmcsl';
 
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
@@ -786,7 +786,7 @@
 
         try {
             await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-                to_email  : email,
+                email     : email,
                 tac_code  : currentTAC,
                 to_name   : 'Pelanggan'
             });
